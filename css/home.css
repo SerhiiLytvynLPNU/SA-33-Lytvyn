@@ -1,0 +1,377 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DAD5CB;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #DAD5CB;
+    color: white;
+    height: 75px;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo img {
+    height: 75px;
+    width: auto;
+}
+
+.nav-d {
+    display: flex;
+    align-items: stretch;
+    flex: 1 1 auto;
+}
+
+.nav-d a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #DAD5CB;
+    border: none;
+    height: 75px;
+}
+
+.nav-m {
+    display: none;
+}
+
+.demo-b, .play-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    flex: auto;
+}
+
+.demo-b {
+    background-color: #141733;
+}
+
+.play-b {
+    background-color: #FF6A13;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #DAD5CB;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #FF6A13;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #FF6A13;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 a {
+    color: rgb(255, 255, 255);
+    background-color: #FF6A13;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #141733;
+}
+
+.promo {
+    position: relative;
+    height: 750px;
+    background-image: url(../images/promo.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.promo h1 {
+    margin: 20px 0;
+    -webkit-text-stroke: 2px black;
+    font-size: 48px;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    background-color: #FF6A13;
+    color: white;
+    text-decoration: none;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    text-align: center;
+}
+
+.learn-more-btn:hover {
+    background-color: #e65c00;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 10px;
+    width: 400px;
+    height: 460px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+}
+
+.card h2 {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-button {
+    background-color: #FF6A13;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-1 {
+    background-image: url(../images/standart.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-2 {
+    background-image: url(../images/deluxe.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-3 {
+    background-image: url(../images/ultimate.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.registration {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.registration h2 {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registration form {
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.registration input[type="email"],
+.registration input[type="text"],
+.registration input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.registration button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+    background-color: #FF6A13;
+    color: white;
+    cursor: pointer;
+}
+
+.registration button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    height: 235px;
+    background-color: #DAD5CB;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    margin-bottom: 20px;
+    background-color: #141733;
+    width: 100%;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+}
+
+.logo-footer img {
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-d {
+        display: none;
+    }
+    
+    .social-links, .social-button, .logo-footer img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .logo img, .demo-b, .play-b {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .social-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .registration, .promo, .pricing {
+        padding: 10px;
+    }
+
+    .registration form {
+        width: 50%;
+    }
+
+    .demo-b, .play-b {
+        flex: auto;
+    }
+
+    .nav-m {
+        display: flex;
+        align-items: stretch;
+        flex: 1 1 auto;
+    }
+    
+    .nav-m a {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        background-color: #DAD5CB;
+        border: none;
+        height: 75px;
+    }
+}

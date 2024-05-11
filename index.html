@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path of grind - Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./images/logo.png" alt="Game Logo"></a>
+        </div>
+        <nav class="nav-d">
+            <a href="info.html">Info</a>
+            <a href="news.html">News</a>
+            <div class="dropdown">
+                <a href="resources.html">Resources</a>
+                <div class="dropdown-content">
+                    <a href="resource1.html">Resource 1</a>
+                    <a href="resource2.html">Resource 2</a>
+                    <div class="dropdown2">
+                        <a href="resource3.html">Resource 3</a>
+                        <div class="dropdown-content2">
+                            <a href="resource3-1.html">Resource 1</a>
+                            <a href="resource3-2.html">Resource 2</a>
+                            <a href="resource3-3.html">Resource 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-m">
+            <div class="dropdown">
+                <a href="menu.html">Menu</a>
+                <div class="dropdown-content">
+                    <a href="info.html">Info</a>
+                    <a href="news.html">News</a>
+                    <a href="resources.html">Resources</a>
+                </div>
+            </div>
+        </nav>
+        <a class="demo-b" href="demo.html">Demo</a>
+        <a class="play-b" href="play.html">Play Now</a>
+    </header>
+    <main>
+        <section class="promo">
+            <h1>Season 1</h1>
+            <a href="learn_more.html" class="learn-more-btn">Learn More</a>
+        </section>
+        <section class="pricing">
+            <div class="card card-1">
+                <h2>Standart Edition</h2>
+                <a href="purchase_basic.html" class="card-button">$15</a>
+            </div>
+            <div class="card card-2">
+                <h2>Deluxe Edition</h2>
+                <a href="purchase_standard.html" class="card-button">$30</a>
+            </div>
+            <div class="card card-3">
+                <h2>Ultimate Edition</h2>
+                <a href="purchase_premium.html" class="card-button">$100</a>
+            </div>
+        </section>
+        <section class="registration">
+            <video autoplay muted loop id="myVideo">
+                <source src="./images/video.mp4" type="video/mp4">
+            </video>
+            <h2>Register</h2>
+            <form action="pathofgrind.com/registration" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="checkbox" id="terms" name="terms" value="agree">
+                <label for="terms">I accept the Terms of use</label>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://facebook.com" class="social-button">Facebook</a>
+            <a href="https://twitter.com" class="social-button">Twitter</a>
+            <a href="https://instagram.com" class="social-button">Instagram</a>
+            <a href="https://youtube.com" class="social-button">YouTube</a>
+            <a href="https://twitch.com" class="social-button">Twitch</a>
+        </div>
+        <div class="logo-footer">
+            <img src="images/logo.png" alt="Game Logo">
+        </div>
+    </footer>
+</body>
+</html>
